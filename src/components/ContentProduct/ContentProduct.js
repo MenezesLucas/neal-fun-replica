@@ -11,7 +11,7 @@ export default {
         {
           id: 1,
           name: "Big Mac",
-          value: 20000000000,
+          value: 2,
           image: '/images/products/bigmac.jpg'
         },
         {
