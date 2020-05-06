@@ -1,0 +1,10 @@
+<section class="bottom" v-if="products.length > 0">
+  <h1 class="bottom__title">Suas compras</h1>
+  <div class="bottom__items">
+    <div class="bottom__items__item" v-for="product of products">
+      <img :src="product.image" :alt="product.name">
+      <span>{{ product.name }}</span>
+      <strong>x{{ product.quantity }}</strong>
+    </div>
+  </div>
+</section>

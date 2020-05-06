@@ -1,0 +1,13 @@
+<section class="top">
+  <select class="top__select" v-model="currentBillionairIndex" @change="setFortune">
+    <option v-for="(billionair, index) of billionaires" :value="index">
+      {{ billionair.name }}
+    </option>
+  </select>
+
+  <div class="top__image">
+    <img :src="currentBillionair.photo" :alt="currentBillionair.name">
+  </div>
+  
+  <h1 class="top__title">Gaste o dinheiro de {{ currentBillionair.name }}</h1>
+</section>

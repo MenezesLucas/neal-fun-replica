@@ -1,0 +1,9 @@
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    &__card {
+        background-color: var(--color-light);
+        padding: 10px;
+    }
+}

@@ -1,0 +1,53 @@
+.product {
+    text-align: center;
+    &__image {
+        padding: 15px 10px 10px;
+        height: 110px;
+    }
+    &__name {
+        font-size: 22px;
+        margin: 0;
+    }
+    &__price {
+        font-size: 20px;
+        color: var(--color-primary);
+        margin: 0;
+    }
+    &__actions {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 25px;
+        gap: 10px;
+        &__input {
+            font-size: 16px;
+            text-align: center;
+            padding: 9px 12px;
+            margin: 0 5px;
+            box-sizing: border-box;
+            border-radius: 3px;
+            border: 1px solid #b2bec3;
+            max-width: 100px;
+            -moz-appearance: textfield;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+        }
+        &__btn {
+            font-size: 16px;
+            font-weight: 500;
+            padding: 9px 12px;
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            &--success {
+                background-color: var(--color-primary);
+                color: var(--color-light);
+            }
+            &--danger {
+                background-color: var(--color-danger);
+                color: var(--color-light);
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<section class="product">
+  <img class="product__image" :src="image" :alt="name">
+  <h2 class="product__name">{{ name }}</h2>
+  <h4 class="product__price">{{ value | money }}</h4>
+  <div class="product__actions">
+    <button class="product__actions__btn" :class="classBtnDanger" @click="sell">Vender</button>
+    <input pattern="\d*" min="0" type="number" class="product__actions__input" v-model.number="quantity">
+    <button class="product__actions__btn" :class="classBtnSuccess" @click="buy">Comprar</button>
+  </div>
+</section>
