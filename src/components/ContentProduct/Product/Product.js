@@ -51,6 +51,20 @@ export default {
           quantity: this.quantity
         })
       }
+    },
+    onInputChange() {
+      const subTotal = this.value * this.quantity;
+      if (subTotal > this.fortuneFree) {
+        this.quantity = parseInt(this.fortuneFree / this.value)
+      }
+
+      this.setProduct({
+        id: this.id,
+        name: this.name,
+        value: this.value,
+        image: this.image,
+        quantity: this.quantity
+      })
     }
   }
 }
